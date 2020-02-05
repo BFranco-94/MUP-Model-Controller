@@ -24,9 +24,7 @@ public class InsertQuery extends QueryManagment{
 	public boolean AfterInsertQuery(Object[] values) {
 		// TODO Auto-generated method stub
 		return false;
-	}
-	
-	
+	}	
 	
 	/**
 	 * @param Object[]value: 
@@ -36,8 +34,7 @@ public class InsertQuery extends QueryManagment{
 	public boolean QueryPrepare(String usrName, String email, String password, String terms) throws SQLException {
 		Conection conn = new Conection();
 		PreparedStatement ps;
-		conn.Conexion();
-		
+		conn.Conexion();	
 		Calendar calendar = Calendar.getInstance();
 		// create a sql date object so we can use it in our INSERT statement
 		Date newDate = new Date(calendar.getTime().getTime());
