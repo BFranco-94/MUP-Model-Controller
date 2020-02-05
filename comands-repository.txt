@@ -1,0 +1,13 @@
+
+
+echo "# MUP-Model-Controller" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/BFranco-94/MUP-Model-Controller.git
+git push -u origin master
+
+…or push an existing repository from the command line
+
+git remote add origin https://github.com/BFranco-94/MUP-Model-Controller.git
+git push -u origin master
