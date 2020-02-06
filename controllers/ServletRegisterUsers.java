@@ -96,18 +96,7 @@ public class ServletRegisterUsers extends HttpServlet {
 			e.printStackTrace();
 		} 
 		
-		/*try {
-			answer = iq.QueryPrepare(userName, email, password, resCheckbox);
-			Message = (answer)? noteSuccess: noteError;
-			response.setContentType("text/html; charset=UTF-8");
-			response.getWriter().append(Message); 
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		*/
-		
-		/*String jSon=
+		String jSon=
 				"{ "
 					+"\"dataRegister\":{"
 		    			+ "\"userName\":\""+userName+"\","
@@ -115,14 +104,8 @@ public class ServletRegisterUsers extends HttpServlet {
 		    			+ "\"password\":\""+password+"\","
 		    			+ "\"isCheckedTerms\":"+isCheckedTerms
 					+ "}"
-				+ "}";
+				+ "}";	
 		
-		response.setContentType("text/html; charset=UTF-8");
-		response.getWriter().append(jSon); 
-		
-		*/
-    	
-    	//response.getWriter().append("User name: "+userName+", email: "+email+", password: "+password+", checked: "+isCheckedTerms);
-	}
+    }
 
 }
